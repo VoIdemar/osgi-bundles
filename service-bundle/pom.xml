@@ -12,14 +12,14 @@
     <artifactId>service-bundle</artifactId>
     <name>service-bundle</name>
     <packaging>bundle</packaging>
-
-	<dependencies>
-		<dependency>
-			<groupId>com.osgi.test</groupId>
-			<artifactId>api-bundle</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.osgi.test</groupId>
+            <artifactId>api-bundle</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
