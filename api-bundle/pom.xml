@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>api-bundle</artifactId>
+    <name>api-bundle</name>
     <packaging>bundle</packaging>
 
     <dependencies>
@@ -33,7 +34,8 @@
                         <Import-Package>org.osgi.framework</Import-Package>
                         <Export-Package>com.osgi.test.apibundle.api</Export-Package>
                         <Bundle-Activator>com.osgi.test.apibundle.ApiBundleActivator</Bundle-Activator>
-                        <Bundle-Version>4.0.0</Bundle-Version>
+                        <Bundle-ManifestVersion>6</Bundle-ManifestVersion>
+                        <Bundle-Version>1.0.0</Bundle-Version>
                     </instructions>
                 </configuration>
             </plugin>

@@ -12,6 +12,7 @@
     <modules>
         <module>api-bundle</module>
         <module>service-bundle</module>
+        <module>app-bundle</module>
     </modules>
 
     <dependencyManagement>
