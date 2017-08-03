@@ -14,6 +14,7 @@
         <module>service-bundle</module>
         <module>app-bundle</module>
         <module>service-listener-bundle</module>
+        <module>robust-app-bundle</module>
     </modules>
 
     <dependencyManagement>
