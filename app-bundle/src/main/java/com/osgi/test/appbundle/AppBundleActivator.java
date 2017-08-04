@@ -1,5 +1,7 @@
 package com.osgi.test.appbundle;
 
+import java.util.Collection;
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
@@ -11,7 +13,12 @@ public class AppBundleActivator implements BundleActivator
     @Override
     public void start(BundleContext context) throws Exception
     {
-        refToService = context.getServiceReference(ApiBundleInterface.class);
+        Collection<ServiceReference<ApiBundleInterface>> references = 
+                context.getServiceReferences(ApiBundleInterface.class, "(serviceType=anotherOne)");
+        
+        System.out.println("References to Services: " + references); 
+        
+        refToService = references.iterator().next();
         
         ApiBundleInterface service = context.getService(refToService);
         service.doSomething();
